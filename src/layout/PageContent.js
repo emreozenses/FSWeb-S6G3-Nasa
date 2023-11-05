@@ -1,11 +1,23 @@
+
+
 const PageContent = (props) => {
-  const { pictureData } = props;
+  const { pictureData,date,changeHandler } = props;
+
+  
   return (
     <div className="page-content">
-      <h3>{pictureData.title}</h3>
-      <img id="apod" src={pictureData.hdurl} alt="astronomy picture of the day"/>
-      <span>{pictureData.date}</span>
-      <p>{pictureData.explanation}</p>
+        <h4>{pictureData.title}</h4>
+        <input 
+        type="date"
+        name="tarih"
+        value={date}
+        onChange={changeHandler}/>
+      <div className="page-content-main">
+        <img id="apod" src={pictureData.hdurl} alt="apod" />
+
+        <p id="exp">{pictureData.explanation}</p>
+      </div>
+        <span>{pictureData.date}</span>
     </div>
   );
 };

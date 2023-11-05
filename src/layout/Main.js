@@ -3,11 +3,12 @@ import Header from "./Header";
 import PageContent from "./PageContent";
 
 const Main = (props) => {
+  const { pictureData } = props;
   return (
     <div className="main">
       <Header />
       <div className="page-body">
-        <PageContent {...props}/>
+        <PageContent {...props} />
       </div>
       <Footer {...props} />
     </div>

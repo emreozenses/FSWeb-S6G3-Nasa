@@ -14,12 +14,16 @@ code {
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 99vh;
+  min-height: 95vh;
+  margin: 1% 10% 0.5% 10%;
+  border: 1px solid black;
+  border-radius: 5%;
+    background-color: rgb(202, 200, 200);
+
 }
 .header {
   max-height: 9vh;
-  border: 2px solid black;
-  margin: 0.5vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,18 +33,20 @@ code {
   max-height: 9vh;
 }
 .page-body {
-  min-height: 79vh;
-  border: 2px solid black;
-  margin: 0.5vh;
+  min-height: 70vh;
+  min-width: 70vw;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
   max-height: 5vh;
-  border: 2px solid black;
-  margin: 0.5vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 .page-content {
   display: flex;
@@ -48,22 +54,37 @@ code {
   justify-content: center;
   align-items: center;
 }
+.page-content-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
 #apod {
-  max-width: 70vh;
-  max-height: 50vh;
+  height: 60vh;
+  width: 40vw;
+  margin-left: 5vw;
 }
 span {
+  font-size: 1rem;
   font-weight: bold;
   margin: 0.2rem;
 }
-p {
+#exp {
   font-style: italic;
-  margin: 0.5rem;
+
+margin-left: 5vw;
+margin-right: 5vw;
+min-height: auto;
+  margin-bottom: 0rem;
+  font-size: 0.8rem;
+
 }
 #copyright {
   text-align: center;
 }
-h3{
+h3 {
   padding: 0;
   margin: 0.5rem;
 }
